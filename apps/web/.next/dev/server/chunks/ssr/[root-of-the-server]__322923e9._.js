@@ -51,25 +51,34 @@ __turbopack_context__.s([
     ()=>Button
 ]);
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/rsc/react-jsx-dev-runtime.js [app-rsc] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/rsc/react.js [app-rsc] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$packages$2f$tokens$2f$src$2f$index$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/packages/tokens/src/index.ts [app-rsc] (ecmascript)");
 ;
 ;
+;
 const Button = ({ variant = "primary", children, ...props })=>{
-    const background = variant === "primary" ? __TURBOPACK__imported__module__$5b$project$5d2f$packages$2f$tokens$2f$src$2f$index$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["colors"].primary : __TURBOPACK__imported__module__$5b$project$5d2f$packages$2f$tokens$2f$src$2f$index$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["colors"].secondary;
+    const [isHovered, setIsHovered] = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"].useState(false);
+    const background = variant === "primary" ? __TURBOPACK__imported__module__$5b$project$5d2f$packages$2f$tokens$2f$src$2f$index$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["colors"].primary : variant === "secondary" ? __TURBOPACK__imported__module__$5b$project$5d2f$packages$2f$tokens$2f$src$2f$index$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["colors"].secondary : "transparent";
+    const color = variant === "tertiary" ? __TURBOPACK__imported__module__$5b$project$5d2f$packages$2f$tokens$2f$src$2f$index$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["colors"].text : __TURBOPACK__imported__module__$5b$project$5d2f$packages$2f$tokens$2f$src$2f$index$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["colors"].background;
+    const colorHover = variant === "tertiary" ? __TURBOPACK__imported__module__$5b$project$5d2f$packages$2f$tokens$2f$src$2f$index$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["colors"].background : __TURBOPACK__imported__module__$5b$project$5d2f$packages$2f$tokens$2f$src$2f$index$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["colors"].primary;
+    const backgroundHover = variant === "tertiary" ? __TURBOPACK__imported__module__$5b$project$5d2f$packages$2f$tokens$2f$src$2f$index$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["colors"].primary : __TURBOPACK__imported__module__$5b$project$5d2f$packages$2f$tokens$2f$src$2f$index$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["colors"].background;
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
         ...props,
+        onMouseEnter: ()=>setIsHovered(true),
+        onMouseLeave: ()=>setIsHovered(false),
         style: {
-            background,
-            color: "white",
+            background: isHovered ? backgroundHover : background,
+            border: "none",
+            color: isHovered ? colorHover : color,
             borderRadius: __TURBOPACK__imported__module__$5b$project$5d2f$packages$2f$tokens$2f$src$2f$index$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["radius"].md,
             padding: "8px 16px",
-            border: "none",
-            cursor: "pointer"
+            cursor: "pointer",
+            textDecoration: variant === "tertiary" && isHovered ? "underline" : "none"
         },
         children: children
     }, void 0, false, {
         fileName: "[project]/packages/ui/src/Button.tsx",
-        lineNumber: 17,
+        lineNumber: 26,
         columnNumber: 9
     }, ("TURBOPACK compile-time value", void 0));
 };

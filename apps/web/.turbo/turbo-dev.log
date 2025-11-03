@@ -195,3 +195,78 @@
 ]
  GET /episodes [32m200[39m in 407ms[2m (compile: 145ms, render: 262ms)[22m
  GET /locations [32m200[39m in 141ms[2m (compile: 134ms, render: 7ms)[22m
+ GET /characters [32m200[39m in 26ms[2m (compile: 7ms, render: 19ms)[22m
+ GET /characters [32m200[39m in 53ms[2m (compile: 39ms, render: 13ms)[22m
+ GET /characters [32m200[39m in 50ms[2m (compile: 41ms, render: 9ms)[22m
+ GET /characters [32m200[39m in 33ms[2m (compile: 22ms, render: 11ms)[22m
+ GET /characters [32m200[39m in 48ms[2m (compile: 32ms, render: 16ms)[22m
+ GET /characters [32m200[39m in 25ms[2m (compile: 16ms, render: 10ms)[22m
+ GET /characters [32m200[39m in 33ms[2m (compile: 24ms, render: 9ms)[22m
+ GET /characters [32m200[39m in 37ms[2m (compile: 24ms, render: 13ms)[22m
+ GET /characters [32m200[39m in 36ms[2m (compile: 26ms, render: 10ms)[22m
+ [31m[1m⨯[22m[39m Error: Event handlers cannot be passed to Client Component props.
+  <button style={{...}} onMouseEnter={function onMouseEnter} onMouseLeave=... children=...>
+                                     ^^^^^^^^^^^^^^^^^^^^^^^
+If you need interactivity, consider converting part of this to a Client Component.
+    at stringify (<anonymous>)
+    at stringify (<anonymous>) {
+  digest: [32m'2782579386'[39m
+}
+ [31m[1m⨯[22m[39m Error: Event handlers cannot be passed to Client Component props.
+  <button style={{...}} onMouseEnter=... onMouseLeave={function onMouseLeave} children=...>
+                                                      ^^^^^^^^^^^^^^^^^^^^^^^
+If you need interactivity, consider converting part of this to a Client Component.
+    at stringify (<anonymous>)
+    at stringify (<anonymous>) {
+  digest: [32m'1737236730'[39m
+}
+ GET /characters [32m200[39m in 245ms[2m (compile: 25ms, render: 220ms)[22m
+ GET /characters [32m200[39m in 80ms[2m (compile: 45ms, render: 35ms)[22m
+ [31m[1m⨯[22m[39m TypeError: useState only works in Client Components. Add the "use client" directive at the top of the file to use it. Read more: https://nextjs.org/docs/messages/react-client-hook-in-server-component
+    at Button (../../packages/ui/src/Button.tsx:13:45)
+[0m [90m 11 |[39m     [33m...[39mprops
+ [90m 12 |[39m }) [33m=>[39m {
+[31m[1m>[22m[39m[90m 13 |[39m     [36mconst[39m [isHovered[33m,[39m setIsHovered] [33m=[39m [33mReact[39m[33m.[39museState([36mfalse[39m)[33m;[39m
+ [90m    |[39m                                             [31m[1m^[22m[39m
+ [90m 14 |[39m
+ [90m 15 |[39m     [36mconst[39m background [33m=[39m
+ [90m 16 |[39m         variant [33m===[39m [32m"primary"[39m[0m {
+  digest: [32m'3741693317'[39m
+}
+ GET /characters [32m200[39m in 59ms[2m (compile: 49ms, render: 9ms)[22m
+ [31m[1m⨯[22m[39m TypeError: useState only works in Client Components. Add the "use client" directive at the top of the file to use it. Read more: https://nextjs.org/docs/messages/react-client-hook-in-server-component
+    at Button (../../packages/ui/src/Button.tsx:13:45)
+[0m [90m 11 |[39m     [33m...[39mprops
+ [90m 12 |[39m }) [33m=>[39m {
+[31m[1m>[22m[39m[90m 13 |[39m     [36mconst[39m [isHovered[33m,[39m setIsHovered] [33m=[39m [33mReact[39m[33m.[39museState([36mfalse[39m)[33m;[39m
+ [90m    |[39m                                             [31m[1m^[22m[39m
+ [90m 14 |[39m
+ [90m 15 |[39m     [36mconst[39m background [33m=[39m
+ [90m 16 |[39m         variant [33m===[39m [32m"primary"[39m[0m {
+  digest: [32m'3741693317'[39m
+}
+ GET /characters [31m500[39m in 63ms[2m (compile: 26ms, render: 37ms)[22m
+ [31m[1m⨯[22m[39m TypeError: useState only works in Client Components. Add the "use client" directive at the top of the file to use it. Read more: https://nextjs.org/docs/messages/react-client-hook-in-server-component
+    at Button (../../packages/ui/src/Button.tsx:13:45)
+[0m [90m 11 |[39m     [33m...[39mprops
+ [90m 12 |[39m }) [33m=>[39m {
+[31m[1m>[22m[39m[90m 13 |[39m     [36mconst[39m [isHovered[33m,[39m setIsHovered] [33m=[39m [33mReact[39m[33m.[39museState([36mfalse[39m)[33m;[39m
+ [90m    |[39m                                             [31m[1m^[22m[39m
+ [90m 14 |[39m
+ [90m 15 |[39m     [36mconst[39m background [33m=[39m
+ [90m 16 |[39m         variant [33m===[39m [32m"primary"[39m[0m {
+  digest: [32m'3741693317'[39m
+}
+ GET /characters [31m500[39m in 69ms[2m (compile: 36ms, render: 33ms)[22m
+ [31m[1m⨯[22m[39m TypeError: useState only works in Client Components. Add the "use client" directive at the top of the file to use it. Read more: https://nextjs.org/docs/messages/react-client-hook-in-server-component
+    at Button (../../packages/ui/src/Button.tsx:13:45)
+[0m [90m 11 |[39m     [33m...[39mprops
+ [90m 12 |[39m }) [33m=>[39m {
+[31m[1m>[22m[39m[90m 13 |[39m     [36mconst[39m [isHovered[33m,[39m setIsHovered] [33m=[39m [33mReact[39m[33m.[39museState([36mfalse[39m)[33m;[39m
+ [90m    |[39m                                             [31m[1m^[22m[39m
+ [90m 14 |[39m
+ [90m 15 |[39m     [36mconst[39m background [33m=[39m
+ [90m 16 |[39m         variant [33m===[39m [32m"primary"[39m[0m {
+  digest: [32m'3741693317'[39m
+}
+ GET /characters [31m500[39m in 53ms[2m (compile: 24ms, render: 29ms)[22m
