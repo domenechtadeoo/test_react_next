@@ -8,8 +8,9 @@
    - Network:      http://192.168.1.150:3000
 
  [32m[1m✓[22m[39m Starting...
- [32m[1m✓[22m[39m Ready in 964ms
- GET / [32m200[39m in 1151ms[2m (compile: 1096ms, render: 55ms)[22m
+ [32m[1m✓[22m[39m Ready in 974ms
+ GET / [32m200[39m in 1161ms[2m (compile: 1109ms, render: 52ms)[22m
+ GET /characters [32m200[39m in 156ms[2m (compile: 147ms, render: 9ms)[22m
 [
   {
     id: [33m1[39m,
@@ -192,51 +193,5 @@
     synopsis: [32m"Bart destroys Lisa's Thanksgiving centerpiece and runs away from home when he gets punished for refusing to apologize to her."[39m
   }
 ]
- GET /episodes [32m200[39m in 463ms[2m (compile: 166ms, render: 298ms)[22m
- GET / [32m200[39m in 26ms[2m (compile: 5ms, render: 21ms)[22m
- [31m[1m⨯[22m[39m ./apps/web/app/characters/page.tsx:1:1
-[1m[31mModule not found[39m[22m: Can't resolve [32m'@ds/ui'[39m
-[0m[31m[1m>[22m[39m[90m 1 |[39m [36mimport[39m { [33mButton[39m } [36mfrom[39m [32m"@ds/ui"[39m[33m;[39m
- [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
- [90m 2 |[39m
- [90m 3 |[39m [36mconst[39m [33mCharactersPage[39m [33m=[39m [36masync[39m () [33m=>[39m {
- [90m 4 |[39m   [36mreturn[39m ([0m
-
-Import map: aliased to relative './pakages/ui/src' inside of [project]/
-
-
-https://nextjs.org/docs/messages/module-not-found
-
-
- GET /characters [31m500[39m in 444ms[2m (compile: 404ms, render: 40ms)[22m
- [31m[1m⨯[22m[39m ./apps/web/app/characters/page.tsx:1:1
-[1m[31mModule not found[39m[22m: Can't resolve [32m'@ds/ui'[39m
-[0m[31m[1m>[22m[39m[90m 1 |[39m [36mimport[39m { [33mButton[39m } [36mfrom[39m [32m"@ds/ui"[39m[33m;[39m
- [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
- [90m 2 |[39m
- [90m 3 |[39m [36mconst[39m [33mCharactersPage[39m [33m=[39m [36masync[39m () [33m=>[39m {
- [90m 4 |[39m   [36mreturn[39m ([0m
-
-Import map: aliased to relative './pakages/ui/src' inside of [project]/
-
-
-https://nextjs.org/docs/messages/module-not-found
-
-
- GET /characters [31m500[39m in 5ms[2m (compile: 1928µs, render: 3ms)[22m
- [31m[1m⨯[22m[39m ./apps/web/app/characters/page.tsx:1:1
-[1m[31mModule not found[39m[22m: Can't resolve [32m'@ds/ui'[39m
-[0m[31m[1m>[22m[39m[90m 1 |[39m [36mimport[39m { [33mButton[39m } [36mfrom[39m [32m"@ds/ui"[39m[33m;[39m
- [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
- [90m 2 |[39m
- [90m 3 |[39m [36mconst[39m [33mCharactersPage[39m [33m=[39m [36masync[39m () [33m=>[39m {
- [90m 4 |[39m   [36mreturn[39m ([0m
-
-Import map: aliased to relative './pakages/ui/src' inside of [project]/
-
-
-https://nextjs.org/docs/messages/module-not-found
-
-
- GET /characters [31m500[39m in 32ms[2m (compile: 20ms, render: 12ms)[22m
- GET /characters [32m200[39m in 91ms[2m (compile: 50ms, render: 41ms)[22m
+ GET /episodes [32m200[39m in 407ms[2m (compile: 145ms, render: 262ms)[22m
+ GET /locations [32m200[39m in 141ms[2m (compile: 134ms, render: 7ms)[22m
